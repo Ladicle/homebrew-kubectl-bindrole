@@ -5,20 +5,20 @@
 class KubectlRolesum < Formula
   desc "Summarize k8s RBAC resources to specified SA, Group and User!"
   homepage "https://github.com/Ladicle/kubectl-rolesum"
-  version "1.5.5"
-
+  version "1.5.6"
+  
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Ladicle/kubectl-rolesum/releases/download/v1.5.5/kubectl-rolesum_darwin-amd64.tar.gz"
-      sha256 "b015e72c1a1ed85bfe8dc721237e60d3b95af1e39ae9bb92e82ce5210d7443b9"
+      url "https://github.com/Ladicle/kubectl-rolesum/releases/download/v1.5.6/kubectl-rolesum_darwin-amd64.tar.gz"
+      sha256 "16a526b1aac8f5b00ea465edcdfaec110cb69966ab0bccee5fee4503c54e3f52"
 
       def install
         bin.install "kubectl-rolesum"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Ladicle/kubectl-rolesum/releases/download/v1.5.5/kubectl-rolesum_darwin-arm64.tar.gz"
-      sha256 "cea7d4221040a0df3bff30f8efb74fb7101116edca7a056690413b610bbbbac3"
+      url "https://github.com/Ladicle/kubectl-rolesum/releases/download/v1.5.6/kubectl-rolesum_darwin-arm64.tar.gz"
+      sha256 "4360b53eb08a54d7a4823245ec54af6032f4f172cbfe182e1df11fe21513aa38"
 
       def install
         bin.install "kubectl-rolesum"
@@ -28,16 +28,16 @@ class KubectlRolesum < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Ladicle/kubectl-rolesum/releases/download/v1.5.5/kubectl-rolesum_linux-arm64.tar.gz"
-      sha256 "f01b2545506b1cc3e151771e4822c6ada7d64f0c6b09fe84edf4ab4d25d78f72"
+      url "https://github.com/Ladicle/kubectl-rolesum/releases/download/v1.5.6/kubectl-rolesum_linux-arm64.tar.gz"
+      sha256 "ebb38e732307385554df3efd540b724a82acd448e7179dfb17a9d06c7b5cb88a"
 
       def install
         bin.install "kubectl-rolesum"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Ladicle/kubectl-rolesum/releases/download/v1.5.5/kubectl-rolesum_linux-amd64.tar.gz"
-      sha256 "f1cbb0faf9c82033b2e883a40c027c114248cc8e472d57903296b36e796413eb"
+      url "https://github.com/Ladicle/kubectl-rolesum/releases/download/v1.5.6/kubectl-rolesum_linux-amd64.tar.gz"
+      sha256 "6e0ad8ee845da5c2b33153b7cd08de16f5a3b355e8563d37f79c42df22e7c51d"
 
       def install
         bin.install "kubectl-rolesum"
